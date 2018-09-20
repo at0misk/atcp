@@ -25,6 +25,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rubyzip'
 gem 'axlsx', '= 2.0.1'
 gem 'axlsx_rails'
+gem "recaptcha"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password

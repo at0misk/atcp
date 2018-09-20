@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 		u.routing = params[:routing]
 		u.account = params[:account]
 		u.account_type = params[:type]
-		if u.save
+		if verify_recaptcha(model: u) && u.save
 			flash[:sent] = "Thanks for your submission!"
 		else
 			flash[:sent] = "Something went wrong, please try again."
