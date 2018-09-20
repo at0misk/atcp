@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  evo_id: 
+  account_name: 
+  agent_name: 
+  routing: 
+  account: 
+  type: 
+
+two:
+  evo_id: 
+  account_name: 
+  agent_name: 
+  routing: 
+  account: 
+  type: 

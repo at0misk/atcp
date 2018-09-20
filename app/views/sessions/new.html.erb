@@ -1,0 +1,46 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3">
+		</div>
+	<div class="col-sm-6">
+		<h3 class="header-top">Evolution Travel Commission Payout</h3>
+		<% if flash[:sent] %>
+		<h2 class="header-top notice"><%= flash[:sent] %></h2>
+		<% end %>
+		<%= image_tag('evologo-words.png', :class => 'logo') %>
+		<%= image_tag('logo.png', :class => 'logo') %>
+		<p class="header">Please submit the form to have pending commission payments sent to your bank account</p>
+		<form action="create" method="POST">
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		  <div class="form-group">
+		    <label for="evo_id">Evolution ID</label>
+		    <input name="evo_id" type="number" class="form-control" id="evo_id" aria-describedby="evoID" placeholder="55555" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="account_name">Name (As It Appears On The Account)</label>
+		    <input name="account_name" type="text" class="form-control" id="account_name" aria-describedby="account_name" placeholder="John Smith" required>
+		  </div>
+		    <div class="form-group">
+		    <label for="account_name">Agent Name (If Different From Account Name)</label>
+		    <input name="agent_name" type="text" class="form-control" id="account_name" aria-describedby="account_name" placeholder="John Smith">
+		  </div>
+		  <div class="form-group">
+		    <label for="routing">Routing #</label>
+		    <input name="routing" type="text" class="form-control" id="routing" aria-describedby="routing" placeholder="011600033" required>
+		  </div>
+		   <div class="form-group">
+		    <label for="account">Account #</label>
+		    <input name="account" type="text" class="form-control" id="account" aria-describedby="account" placeholder="021302567" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="type">Account Type</label>
+		    <select name="type" class="form-control" id="type">
+		      <option value="1">Checking</option>
+		      <option value="2">Savings</option>
+		    </select>
+		  </div>
+		  <button type="submit" class="btn btn-primary sub-btn">Submit</button>
+		</form>
+		</div>
+	</div>
+</div>
