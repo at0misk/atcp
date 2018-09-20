@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_20_190803) do
+ActiveRecord::Schema.define(version: 2018_09_20_213352) do
 
   create_table "users", force: :cascade do |t|
     t.integer "evo_id"
@@ -21,6 +21,9 @@ ActiveRecord::Schema.define(version: 2018_09_20_190803) do
     t.integer "account_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pay_type"
+    t.string "address"
+    t.string "phone"
   end
 
 end

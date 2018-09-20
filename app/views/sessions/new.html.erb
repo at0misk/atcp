@@ -25,6 +25,14 @@
 		    <input name="agent_name" type="text" class="form-control" id="account_name" aria-describedby="account_name" placeholder="John Smith">
 		  </div>
 		  <div class="form-group">
+		    <label for="address">Address</label>
+		    <input name="address" type="text" class="form-control" id="address" aria-describedby="address" placeholder="123 Main Street, Los Angeles, CA, 90026" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="phone">Phone Number</label>
+		    <input name="phone" type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="973-867-5309" required>
+		  </div>
+		  <div class="form-group">
 		    <label for="routing">Routing #</label>
 		    <input name="routing" type="text" class="form-control" id="routing" aria-describedby="routing" placeholder="011600033" required>
 		  </div>
@@ -37,6 +45,13 @@
 		    <select name="type" class="form-control" id="type">
 		      <option value="1">Checking</option>
 		      <option value="2">Savings</option>
+		    </select>
+		  </div>
+		  <div class="form-group">
+		    <label for="pay_type">Payment Type</label>
+		    <select name="pay_type" class="form-control" id="type">
+		      <option value="ACH Direct Deposit">ACH Direct Depost</option>
+		      <option value="Check">Check</option>
 		    </select>
 		  </div>
 		  <div class="form-group">
