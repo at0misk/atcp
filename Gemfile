@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'rubyzip', '= 1.0.0'
+gem 'rubyzip'
 gem 'axlsx', '= 2.0.1'
 gem 'axlsx_rails'
 # Use Redis adapter to run Action Cable in production
