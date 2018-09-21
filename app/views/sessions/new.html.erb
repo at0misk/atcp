@@ -13,7 +13,7 @@
 		<form action="create" method="POST">
 			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 		  <div class="form-group">
-		    <label for="evo_id">Evolution ID</label>
+		    <label for="evo_id">Evolution ID <span class="note">* If you have multiple Evolution accounts, please submit multiple forms for each account ID</span></label>
 		    <input name="evo_id" type="number" class="form-control" id="evo_id" aria-describedby="evoID" placeholder="55555" required>
 		  </div>
 		  <div class="form-group">
