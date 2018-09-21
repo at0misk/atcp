@@ -33,8 +33,8 @@
 		    <input name="phone" type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="973-867-5309" required>
 		  </div>
 		  <div class="form-group">
-		    <label for="routing">Routing #</label>
-		    <input name="routing" type="text" class="form-control" id="routing" aria-describedby="routing" placeholder="011600033" required>
+		    <label for="routing">Routing # <span class="note">*Routing #s Must Be 9 Digits</label>
+		    <input name="routing" type="number" class="form-control" id="routing" aria-describedby="routing" placeholder="011600033" required maxlength="9" pattern=".{9,}">
 		  </div>
 		   <div class="form-group">
 		    <label for="account">Account #</label>
