@@ -14,6 +14,7 @@ class SessionsController < ApplicationController
 		u.account = params[:account]
 		u.account_type = params[:type]
 		u.pay_type = params[:pay_type]
+		u.personal = params[:personal]
 		if verify_recaptcha(model: u) && u.save
 			flash[:sent] = "Thanks for your submission!"
 		else
